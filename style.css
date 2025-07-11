@@ -22,6 +22,7 @@ html,body {
     width: 100%;
     height: 100%;
     background: linear-gradient(#D6DDED, #FFFFFF);
+    background-attachment: fixed;
     font-family:"Raleway", sans-serif;
 }
 /* ==-== btn-section ==-== */ 
@@ -43,8 +44,7 @@ html,body {
 /* ===-=== header section starts here ===-===  */
 
 .header {
-    width: 100%;
-    height: 700px;
+    height: 650px;
     background-image: url(Assets/Hero-bg.png);
 }
 
@@ -96,9 +96,9 @@ html,body {
 }
 
 /* ===-=== action section starts here ===-===  */
+
 .action {
     width: 100%;
-    background-color: #fff;
 }
 .action-body {
     margin: 100px 150px;
@@ -123,5 +123,124 @@ html,body {
     width: 60%;
     font-size: 24px;
     color: #252432;
+}
+
+ /* ===-=== user survey section starts here ===-===  */
+.user-survey{
+    margin: 100px;
+    display: flex;
+    justify-content: center;  
+}
+ .survey-body {
+    width: 90%;
+    margin-bottom: 100px;
+    border-radius: 1rem;
+    display: flex;
+    padding: 50px 80px ;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    background-color:#007AFF;
+ }
+ .survey-body h1 {
+    font-size: 38px;
+ }
+ .survey-body .body-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+ }
+
+ .item span {
+    font-size:80px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+ }
+
+ /* ===-=== review section starts here ===-===  */
+
+ .review-section > h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+ }
+ .review-body {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+ }
+
+ .review-body > h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+ }
+
+ .review-box {
+    max-width: 366px;
+    min-height: 243px;
+     display: flex;
+     flex-direction: column;
+     padding: 2rem;
+     gap: .8rem;
+     background-color: white;
+     border-radius: .5rem;
+     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1); 
+ }
+
+ .review-box img {
+    border-radius: 50%;
+ }
+ .review-box .img {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ }
+  .review-box .img p span {
+    display: block;
+  }
+
+    /* ===-=== form section starts here ===-===  */
+
+.form-sec {
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-sec h1 {
+    font-size: 97px;
+    width: 40%;
+}
+
+/* ==-== form ==-==  */
+.form {
+    width: 20%;
+}
+.form input {
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem 0;
+    border: none;
+    font-size: 1rem;
+    border-radius: .7rem;
+    text-transform: none;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.form label {
+    font-weight: bold;
+}
+
+.form input[type=text] {
+    padding: 2.5rem; 
+}
+
+.form .btn-secondary {
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1rem;
 }
 
