@@ -16,15 +16,17 @@
     list-style-type: none;
     text-transform: capitalize;
     scroll-behavior: smooth;
+    outline: none;
 }
 
 html,body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
     background: linear-gradient(#D6DDED, #FFFFFF);
     background-attachment: fixed;
-    font-family:"Raleway", sans-serif;
 }
+
 /* ==-== btn-section ==-== */ 
 
 .btn {
@@ -126,7 +128,8 @@ html,body {
 }
 
  /* ===-=== user survey section starts here ===-===  */
-.user-survey{
+
+.user-survey {
     margin: 100px;
     display: flex;
     justify-content: center;  
@@ -140,7 +143,7 @@ html,body {
     gap: 40px;
     flex-direction: column;
     align-items: center;
-    background-color:#007AFF;
+    background: linear-gradient(to right,#539ae6, #706cdd, #635bcc)
  }
  .survey-body h1 {
     font-size: 38px;
@@ -156,10 +159,9 @@ html,body {
     font-size:80px;
     font-weight: bold;
     font-family: "Inter", sans-serif;
+    color: #4E47FF;
  }
 
-
- 
  /* ===-=== review section starts here ===-===  */
 
  .review-section > h1 {
@@ -183,13 +185,13 @@ html,body {
  .review-box {
     max-width: 366px;
     min-height: 243px;
-     display: flex;
-     flex-direction: column;
-     padding: 2rem;
-     gap: .8rem;
-     background-color: white;
-     border-radius: .5rem;
-     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: .8rem;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1); 
  }
 
  .review-box img {
@@ -205,7 +207,7 @@ html,body {
   }
 
   
-    /* ===-=== form section starts here ===-===  */
+/* ===-=== form section starts here ===-===  */
 
 .form-sec {
     width: 90%;
@@ -227,11 +229,15 @@ html,body {
     width: 100%;
     padding: 1rem;
     margin: .5rem 0;
-    border: none;
+    border: 1px solid #ddd;
     font-size: 1rem;
     border-radius: .7rem;
     text-transform: none;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+}
+.form input:focus {
+   border-color: #4E47FF;
 }
 .form label {
     font-weight: bold;
@@ -247,3 +253,48 @@ html,body {
     padding: 1rem;
 }
 
+/* ===-=== footer section starts here ===-===  */
+
+.footer-section {
+    display: flex;
+    justify-content: center;
+    min-height: 428px;
+    background-color: #fff;
+}
+
+.footer-section .footer {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer h1 {
+    font-family: "Inter", sans-serif; ;
+    font-size: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4E47FF
+}
+.footer p {
+    width: 45%;
+    margin: 0 auto;
+    font-size: .9rem;
+    color: #8987A1;
+}
+.footer .footer-link {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.footer-link a {
+    color: #8987A1;
+}
+.footer-link a:hover{
+    font-weight: bold;
+    color: black;
+    transition: all .5s ease-in;
+}
+
+ /* ========= Thanks For Visiting My Code  ========= */
